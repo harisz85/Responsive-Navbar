@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;     
+    background: url("news.jpg") center  no-repeat; 
+    background-size: cover;
+    font-family: 'Oswald', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif sans-serif;
+    
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    color: #fff;
+    background: #f5ebeb2f;
+    
+}
+
+header .logo {
+    font-size: 1.6rem;
+}
+
+header .navbar {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a:first-child {
+    margin-right: auto;
+    color: rgba(56, 68, 105, 0.789);
+}
+
+header .navbar  a {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 1rem 1rem;
+    border-radius: 6px;
+}
+
+header .navbar a:hover,.active{
+    background-color: #F1E4C3;
+    color:rgba(165, 42, 42, 0.717);
+    transition: .5s;
+}
+
+
+header .btn {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:768px){
+
+
+    header .logo {
+        font-size: 1.1rem;
+    }
+
+    header .navbar{
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: flex-start;
+        padding-top: 2.5rem;
+        height: 100vh;
+        background:  #f1ebc35e;
+        top: 0;
+        left: -100%;
+        min-width: 13rem;
+        transition: 2s;
+    }
+    
+
+    header .navbar  a {
+        font-size: .9rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+
+    header .navbar.active {
+        left:0;
+        transition: .5s;
+    }
+    
+    header .navbar a:hover{
+        background-color: #F1E4C3;
+        color:rgba(165, 42, 42, 0.717);
+        transition: .5s;
+    }
+
+    header .btn {
+        display: block;
+    }
+    header .btn .closeBtn {
+        position: absolute;
+        top: 0;
+        margin: 20px;
+    }
+
+    
+}
+
+
+
+
+
+/*
+nav li {
+    height: 2.5rem;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+
+nav a {
+   display: flex;
+   align-items: center;
+   padding: 0 2rem;
+   height: 100%;
+   color:black;
+   
+}
+
+nav a:hover {
+    background-color: rgba(245, 245, 220, 0.602);
+}
+
+li a {
+  
+    text-decoration: none;
+}
+
+*/
